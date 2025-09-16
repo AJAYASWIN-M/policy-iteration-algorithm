@@ -1,15 +1,22 @@
 # POLICY ITERATION ALGORITHM
 
 ## AIM
-Write the experiment AIM.
+The goal of the notebook is to implement and evaluate a policy iteration algorithm within a custom environment (gym-walk) to find the optimal policy that maximizes the agent's performance in terms of reaching a goal state with the highest probability and reward.
 
 ## PROBLEM STATEMENT
-Explain the problem statement.
+The task is to develop and apply a policy iteration algorithm to solve a grid-based environment (gym-walk). The environment consists of states the agent must navigate through to reach a goal. The agent has to learn the best sequence of actions (policy) that maximizes its chances of reaching the goal state while obtaining the highest cumulative reward.
 
 ## POLICY ITERATION ALGORITHM
-Include the steps involved in policy iteration algorithm
-</br>
-</br>
+Initialize: Start with a random policy for each state and initialize the value function arbitrarily.
+
+Policy Evaluation: For each state, evaluate the current policy by computing the expected value function under the current policy.
+
+Policy Improvement: Improve the policy by making it greedy with respect to the current value function (i.e., choose the action that maximizes the value function for each state).
+
+Check Convergence: Repeat the evaluation and improvement steps until the policy stabilizes (i.e., when no further changes to the policy occur).
+
+Optimal Policy: Once convergence is achieved, the policy is considered optimal, providing the best actions for the agent in each state.
+
 
 ## POLICY IMPROVEMENT FUNCTION
 #### Name:- Ajay Aswin M
@@ -98,29 +105,29 @@ print_policy(optimal_pi, P, action_symbols=('<', 'v', '>', '^'), n_cols=4)
 ### 1. Policy, Value function and success rate for the Adversarial Policy
 
 #### Policy
-<img width="597" height="195" alt="image" src="https://github.com/user-attachments/assets/46b96126-f9e1-4d5e-b60a-a691ef7389fe" />
+<img width="558" height="190" alt="image" src="https://github.com/user-attachments/assets/d3765b97-ef33-4029-88b2-e42d019e2015" />
 
 
 #### Value function
-<img width="569" height="180" alt="image" src="https://github.com/user-attachments/assets/d79f3eff-1d6d-4400-9ac6-22b471f009a4" />
+<img width="602" height="183" alt="image" src="https://github.com/user-attachments/assets/2757e56f-eda8-40cf-8485-9a2789ff334e" />
 
 
 #### success rate
-<img width="719" height="75" alt="image" src="https://github.com/user-attachments/assets/516bad84-723d-498c-89cd-2c11b9c057bd" />
+<img width="736" height="76" alt="image" src="https://github.com/user-attachments/assets/4b06590f-6392-474e-9cfc-97451c42907b" />
 
 </br>
 
 ### 2. Policy, Value function and success rate for the Improved Policy
 
 #### Policy
-<img width="659" height="191" alt="image" src="https://github.com/user-attachments/assets/640b339b-fe79-4c36-ad6c-34f08585b8b1" />
+<img width="614" height="197" alt="image" src="https://github.com/user-attachments/assets/9aa83da7-b5e5-4b8d-894c-cec9fad74bd1" />
 
 #### Value function
-<img width="651" height="180" alt="image" src="https://github.com/user-attachments/assets/51b3aab7-f951-4e4e-93ac-e2d8e9d3b915" />
+<img width="635" height="214" alt="image" src="https://github.com/user-attachments/assets/8e62bcde-f8c7-4392-a6c4-59c1380841ca" />
 
 
 #### success rate
-<img width="746" height="61" alt="image" src="https://github.com/user-attachments/assets/b1c3763f-26a3-43b8-ad11-c62aafecd55d" />
+<img width="751" height="53" alt="image" src="https://github.com/user-attachments/assets/5a4f3444-4c2b-4155-8966-7856455c1fbd" />
 
 </br>
 
@@ -128,7 +135,19 @@ print_policy(optimal_pi, P, action_symbols=('<', 'v', '>', '^'), n_cols=4)
 
 </br>
 
+#### Policy
+<img width="598" height="209" alt="image" src="https://github.com/user-attachments/assets/827c18b8-6355-47ac-ae69-d0ea66366d93" />
+
+#### success rate
+<img width="760" height="61" alt="image" src="https://github.com/user-attachments/assets/52853760-2f3e-40d4-8ede-2e8a4f103d81" />
+
+#### Value function
+<img width="1058" height="186" alt="image" src="https://github.com/user-attachments/assets/80ffdf47-359c-42fe-9569-5542b83f6084" />
+
+
+
+
 
 ## RESULT:
 
-Write your result here
+Thus the program to iterate the policy evaluation and policy improvement is executed successfully.
